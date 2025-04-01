@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Load JS Example</title>
-</head>
-<body>
-
-    <h1>JavaScript Function Example</h1>
-
+    <title>Call JS Interface Example</title>
     <script>
+        // 定义 JavaScript 接口（函数）
         function callGetUserInfo() {
             var clazz = "com.hihonor.gamecenter.bu_h5.manager.JSMethodImp";
             var operationName = "getUserInfo";
@@ -46,6 +42,12 @@
             }
         }
     </script>
+</head>
+<body>
+
+    <h1>JavaScript Interface Example</h1>
+    <button onclick="callGetUserInfo()">Get User Info</button>
+    <button onclick="callRegisterScreenShotListener()">Register Screen Shot Listener</button>
 
 </body>
 </html>
