@@ -13,12 +13,30 @@
         }
 
         function getLocation() {
-            if (navigator.location) {
-                navigator.location.getCurrentPosition(showPosition, showError);
-            } else {
-                document.getElementById('locationInfo').innerHTML = "Geolocation is not supported by this browser.";
-            }
+         // 检查浏览器是否支持 Geolocation API
+            if (navigator.geolocation) {
+               
+                  alert("1212");
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
         }
+
+
+// 成功获取位置信息的回调函数
+function success(position) {
+    const latitude = position.coords.latitude; // 获取纬度
+    const longitude = position.coords.longitude; // 获取经度
+    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    
+    // 如果需要，可以在这里调用其他函数来处理位置信息
+}
+
+// 处理错误的回调函数
+function error() {
+    console.log("Unable to retrieve your location.");
+}
 
         window.onload = function() {
             document.getElementById("showLocation").onclick = getLocation;
