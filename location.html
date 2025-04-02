@@ -28,9 +28,10 @@
 function success(position) {
     alert("1213");
     const latitude = position.coords.latitude; // 获取纬度
-    alert("position",position);
+    alert("position",latitude );
     const longitude = position.coords.longitude; // 获取经度
     console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+     alert(`Latitude: ${latitude}, Longitude: ${longitude}` );
     
     // 如果需要，可以在这里调用其他函数来处理位置信息
 }
