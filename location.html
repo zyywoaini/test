@@ -14,12 +14,13 @@
 
         function getLocation() {
          // 检查浏览器是否支持 Geolocation API
-             alert("1213");
+             alert("1212");
             if (navigator.geolocation) {
-               
+                alert("1211");
                  
                 navigator.geolocation.getCurrentPosition(success, error);
             } else {
+                alert("1210");
                 alert("Geolocation is not supported by this browser.");
             }
         }
