@@ -26,7 +26,9 @@
 
 // 成功获取位置信息的回调函数
 function success(position) {
+    alert("1213");
     const latitude = position.coords.latitude; // 获取纬度
+    alert("position",position);
     const longitude = position.coords.longitude; // 获取经度
     console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     
