@@ -1,4 +1,11 @@
-    <script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call JS Interface Example</title>
+  
+     <script>
         function showPosition(position) {
             const locationInfo = "Latitude: " + position.coords.latitude +
                                  "<br>Longitude: " + position.coords.longitude;
@@ -17,3 +24,13 @@
             document.getElementById("showLocation").onclick = getLocation;
         };
     </script>
+</head>
+<body>
+
+    <h1>JavaScript Interface Example</h1>
+    <button onclick="getLocation()">Get User Info</button>
+    <button onclick="callRegisterScreenShotListener()">Register Screen Shot Listener</button>
+
+</body>
+</html>
+
